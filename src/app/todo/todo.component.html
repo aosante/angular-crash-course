@@ -1,7 +1,7 @@
-<ul class="list-group">
-  <li class="list-group-item mb-3">
-    <input type="checkbox" />
+
+  <li class="list-group-item mb-3" [class.completed]="todo.completed">
+    <input (change)="onToggle(todo)" type="checkbox" />
     {{ todo.title }}
-    <button class="btn-delete">&times;</button>
+    <button (click)="onDelete(todo)" class="btn-delete">&times;</button>
   </li>
-</ul>
+

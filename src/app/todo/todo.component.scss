@@ -1,7 +1,15 @@
+li {
+  text-align: left;
+}
+
 .btn-delete {
   background-color: rgb(189, 5, 5);
   color: #fff;
-  padding: 0.5em;
+  padding: .1em .5em;
+  float: right;
+  border-radius: 50px;
+  font-size: 1.2em;
+  font-weight: 700;
 }
 
 //completed class
