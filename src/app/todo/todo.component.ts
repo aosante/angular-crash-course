@@ -14,7 +14,8 @@ export class TodoComponent implements OnInit {
 
   constructor(private todoService: TodoService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
 
   onToggle(todo) {
     todo.completed = !todo.completed;

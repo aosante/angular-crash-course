@@ -10,9 +10,10 @@ import { TodosComponent } from './todos/todos.component';
 import { TodoComponent } from './todo/todo.component';
 import { HomeComponent } from './home/home.component';
 import { AddTodoComponent } from './add-todo/add-todo.component';
+import { CompletedTodosComponent } from './completed-todos/completed-todos.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, TodosComponent, TodoComponent, HomeComponent, AddTodoComponent],
+  declarations: [AppComponent, NavbarComponent, TodosComponent, TodoComponent, HomeComponent, AddTodoComponent, CompletedTodosComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent]
