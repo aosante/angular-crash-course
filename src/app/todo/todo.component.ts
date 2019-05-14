@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Todo } from '../models/Todo';
-import { TodoService} from '../services/todo.service';
+import { TodoService } from '../services/todo.service';
 
 @Component({
   selector: 'app-todo',
@@ -16,18 +16,15 @@ export class TodoComponent implements OnInit {
 
   ngOnInit() {}
 
-
   onToggle(todo) {
     todo.completed = !todo.completed;
     //toggle on server
-    this.todoService.toggleCompleted(todo).subscribe(todo => console.log(todo))
-
+    this.todoService.toggleCompleted(todo).subscribe(todo => console.log(todo));
   }
 
-  /*this event has to be emmited so the todos array can be filter and the deleted todo removed
+  /*this event has to be emmited upwards so the todos array can be filter and the deleted todo removed
    from the UI*/
   onDelete(todo) {
     this.deleteTodo.emit(todo);
   }
-
 }
